@@ -1,4 +1,4 @@
-# `turtle_recorder`: `turtle`动画生成器
+# turtle_recorder: turtle动画生成器
 
 `turtle`是python中的一个简单的绘图工具，可以用来画很多有趣的东西（具体用法见[官方文档](https://docs.python.org/3/library/turtle.html)）。
 
@@ -54,6 +54,8 @@ peg.remove_temp() # 清除缓存
 ## 致谢
 
 在此感谢StackOverflow社区中[该问题](https://stackoverflow.com/questions/41319971/is-there-a-way-to-save-turtles-drawing-as-an-animated-gif/41353016#41353016)下的答案，这给予了我绘图捕获过程中的部分启发。
+
+展示动画（小猪佩奇）代码`pegga.py`来自[Monster12138/-](https://github.com/Monster12138/-)，在此表示感谢。
 
 本项目基于MIT License开源。（查看`LICENSE`文件获取更多信息）
 
