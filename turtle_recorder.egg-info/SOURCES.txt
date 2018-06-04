@@ -1,0 +1,8 @@
+setup.py
+turtle_recorder/__init__.py
+turtle_recorder/_version.py
+turtle_recorder/turtle_recorder.py
+turtle_recorder.egg-info/PKG-INFO
+turtle_recorder.egg-info/SOURCES.txt
+turtle_recorder.egg-info/dependency_links.txt
+turtle_recorder.egg-info/top_level.txt

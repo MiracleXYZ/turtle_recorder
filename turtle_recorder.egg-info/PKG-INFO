@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: turtle-recorder
+Version: 0.2.0
+Summary: A recorder of Python turtle animations written in Python 3.
+Home-page: https://github.com/MiracleXYZ/turtle_recorder
+Author: Yuzhang Xie
+Author-email: xieyuzhang_xyz@foxmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: turtle record gif mp4
+Platform: any

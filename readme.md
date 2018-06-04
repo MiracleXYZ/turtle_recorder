@@ -13,11 +13,15 @@
 
 ## 安装
 
-1. `git clone`或者下载为`zip`
-2. 安装依赖的python库：`numpy`, `matplotlib`, `PIL`
+1. 安装依赖的python库：`numpy`, `matplotlib`, `PIL`
   
    ```
    pip install -r requirements.txt
+   ```
+2. 安装`turtle_recorder`：`git clone`或者下载为`zip`，在根目录下
+   
+   ```
+   python setup.py install
    ```
 3. 安装[Ghostscript](https://www.ghostscript.com/download/gsdnld.html)并添加到PATH环境变量中（Windows操作，Linux及Mac OS应该有类似操作，欢迎补充）
 4. 转换为视频：安装[ffmpeg](http://ffmpeg.org/download.html)并添加到PATH环境变量
@@ -31,11 +35,9 @@
 from pegga import main # 导入原来画图的函数，注意要删去末尾的done()或turtle.done()
 from turtle_recorder import Recorder
 
-peg = Recorder(main, fps=30) # 参数fps为每秒帧数
-peg.record() # 捕获并保存动画
-peg.to_video('./media/pegga.mp4') # 生成mp4视频
-peg.to_gif('./media/pegga.gif') # 生成gif动图
-peg.remove_temp() # 清除缓存
+with Recorder(main, fps=30) as peg: # fps为每秒帧数
+    peg.to_video('./media/pegga.mp4') # 保存为mp4视频
+    peg.to_gif('./media/pegga.gif') # 保存为gif图片
 ```
 
 执行完成后，在对应目录（此例中是`./media`文件夹）查看结果。
@@ -59,3 +61,9 @@ peg.remove_temp() # 清除缓存
 
 本项目基于MIT License开源。（查看`LICENSE`文件获取更多信息）
 
+## 更新日志
+
+- 2018/6/3: Version 0.1.0
+- 2018/6/4: Version 0.2.0
+   - 使用更简单的`with ... as`结构
+   - 添加`setup.py`
